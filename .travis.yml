@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- "stable"
+
+install:
+- npm install -g truffle
+- npm install -g ganache-cli
+- npm install -g coveralls
+- npm install
+
+script:
+- npm run test
+
+after_success:
+- export CURRENT_VERSION=$(node -p "require('./package.json').version")
+- export LATEST=$(npm view $(node -p "require('./package.json').name") dist-tags.latest)
+- export NEXT=$(npm view $(node -p "require('./package.json').name") dist-tags.next)
+- npm run coverage && cat coverage/lcov.info | coveralls
+
