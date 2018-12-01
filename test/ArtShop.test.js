@@ -22,6 +22,9 @@ contract('ArtShop', async (accounts) => {
     it('should delete art which is storing in server', async=>{})
     it('should return successfully done or not as its return value', async=>{})
   })
+  describe('timeout()', async()=>{
+    it('call delete function periodically')
+  })
   /*
   describe('voting()', async()=>{
     it('should receive target id, good or bad as its input parameter', async=>{})
