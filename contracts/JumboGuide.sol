@@ -1,13 +1,14 @@
 interface JumboGuide {
-    enum Categories {Star3, Star2, Star1, Korean, Chinese, Japanese, Russian}
+    enum Categories {Korean, Chinese, Japanese, Italian, Thai, etc}
+    
     
     struct Restaurant {
         bytes32 image;
         string name;
         string location;
         Categories category;
-        string menu;
         int256 score;
+        int256 numjumbo;
     }
     
     struct Review {
@@ -22,17 +23,17 @@ interface JumboGuide {
         string calldata name,
         string calldata location,
         Categories category,
-        string calldata menu
         ) external;
     function voteRestaurant(address store, bool upvote) external;
     function getRestaurants(Categories category) external returns(address[] memory);
+    /* 위에랑 같은데 점보 숫자 불러오는 함수 만들어야함 */
     function getRestaurant(address store) external returns(
         bytes32 image,
         string memory name,
         string memory location,
         Categories category,
-        string memory menu,
-        int256 score
+        int256 score,
+        int256 numjumbo;
         );
     
     function voteRestaurantWithReview(address store, bytes32 hash, int256 score) external;
