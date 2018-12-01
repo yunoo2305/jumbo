@@ -1,5 +1,5 @@
 interface MyJumbo {
-    enum States {Normal, Hunger, Hangry}
+    enum States {Normal, Hunger, Hangry, sick}
     enum Colors {Red, Green, Blue, Black, White, Rainbow}
     
     struct Jumbo {
@@ -8,7 +8,7 @@ interface MyJumbo {
         bytes32[] items;
         Colors[] berries;
         Colors jumboColor;
-        Colors lastBerry;
+       
     }
     
     // mapping(address => bytes32[]) public myItems;
@@ -24,6 +24,6 @@ interface MyJumbo {
         bytes32[] memory items,
         Colors[] memory berries,
         Colors jumboColor,
-        Colors lastBerry
+      
     );
 }
