@@ -25,8 +25,8 @@ contract('JumboGuide', async (accounts) => {
     it('should return pass/non-pass')
   })
   describe('food()', async()=>{
-    it('should receive store type, user address', async()=>{})
+    it('should receive store type, user address, item id as its input parameter', async()=>{})
+    it('minting new item')
+    it('user get item; transfer ownership')
   })
-  describe()
-  describe()
 })
