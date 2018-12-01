@@ -5,15 +5,28 @@ const should = chai.use(require('chai-bignumber')(BigNumber)).should()
 const JumboGuide = artifacts.require('JumboGuide')
 
 contract('JumboGuide', async (accounts) => {
-  describe('register()', async()=>{
-    it('should receive name, location, ..., as its input parameter', async=>{})
-    it('should return somethign as its return value', async=>{})
+  describe('scoring()', async()=>{
+    it('should receive store struct., voting result, scores, etc., ... as its input parameter', async=>{})
+    it('should return total score as return value', async=>{})
   })
-  describe('vote()', async()=>{
-    it('should affect former voter\'s Jumbo growing state')
+  describe('listing()', async()=>{
+    it('should get each store\'s score', async=>{})
+    it('sorting...', async=>{})
+    it('should return top100 or whatever as return value(list of ids)', async=>{})
   })
-  describe()
-  describe()
-  describe()
-  describe()
+  describe('jumbo-ing()', async()=>{
+    it('should receive list of ids', async=>{})
+    it('should return map(ids => integer)', async=>{})
+  })
+  describe('quest()', async()=>{
+    it('should pass validation test', async()=>{}) // voting, transaction from store, etc., ...
+    it('if not already has')
+    it('give item to customer')
+    it('should return pass/non-pass')
+  })
+  describe('food()', async()=>{
+    it('should receive store type, user address, item id as its input parameter', async()=>{})
+    it('minting new item')
+    it('user get item; transfer ownership')
+  })
 })
