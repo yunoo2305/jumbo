@@ -22,8 +22,8 @@ interface MyJumbo {
         uint8 level,
         States state,
         bytes32[] memory items,
-        uint8[] memory berries,
-        uint8 jumboColor,
-        uint8 lastBerry
+        Colors[] memory berries,
+        Colors jumboColor,
+        Colors lastBerry
     );
 }
