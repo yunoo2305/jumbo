@@ -1,25 +1,31 @@
-import React from 'react'
-import { history } from '../store'
+import React, { Component } from 'react'
 
-const locationToActive = (id) => {
-  if (history.location.pathname) {
-    return history.location.pathname === id ? 'active': '';
-  } else if(history.location.pathname === '') {
-    return id === '/home' ? 'active' : '';
-  }
-}
-const NavBar = () => {
-  console.log(history.location.pathname);
+export const NavBar = () => {
   return (
-      <header id="header">
-        <nav>
+    <nav id="nav">
+      <ul>
+        <li>
+          <a href="#">Dropdown</a>
           <ul>
-            <li><a href="/" className={locationToActive('/')}>Home</a></li>
-            <li><a href="/season-manager" className={locationToActive('/season-manager')}>Create</a></li>
-            <li><a href="/season" className={locationToActive('/season')}>Participate</a></li>
-            <li><a href="/market" className={locationToActive('/market')}>Market</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Magna phasellus</a></li>
+            <li><a href="#">Etiam dolore nisl</a></li>
+            <li>
+              <a href="#">Phasellus consequat</a>
+              <ul>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Phasellus consequat</a></li>
+                <li><a href="#">Magna phasellus</a></li>
+                <li><a href="#">Etiam dolore nisl</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Veroeros feugiat</a></li>
           </ul>
-        </nav>
-      </header>
-  )};
-export default NavBar
+        </li>
+        <li><a href="left-sidebar.html">Left Sidebar</a></li>
+        <li class="break"><a href="right-sidebar.html">Right Sidebar</a></li>
+        <li><a href="no-sidebar.html">No Sidebar</a></li>
+      </ul>
+    </nav>
+  )
+}

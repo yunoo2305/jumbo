@@ -1,3 +1,5 @@
+import ArtShop from './../build/contracts/ArtShop.json'
+
 const drizzleOptions = {
   web3: {
     block: false,
