@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../components/JumboHeader'
+import Header from '../components/Header'
 import Footer from '../includes/Footer'
 
 export default class SimpleLayout extends Component {
