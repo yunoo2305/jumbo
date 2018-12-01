@@ -7,13 +7,23 @@ interface MyJumbo {
         States state;
         bytes32[] items;
         Colors[] berries;
+        Colors jumboColor;
         Colors lastBerry;
     }
     
-    function feed();
-    function equipItem();
-    function removeItem();
-    function getItems();
-    function getItem();
-    function getJumbo();
+    // mapping(address => bytes32[]) public myItems;
+    
+    function feed(Colors berry, uint8 amount) external;
+    function equipItem(bytes32 itemId) external;
+    function removeItem(bytes32 itemId) external;
+    // function getItems() external returns(bytes32[] lists);
+    function getItems() external returns(bytes32[] memory lists);
+    function getJumbo() external returns(
+        uint8 level,
+        States state,
+        bytes32[] memory items,
+        uint8[] memory berries,
+        uint8 jumboColor,
+        uint8 lastBerry
+    );
 }
