@@ -6,13 +6,15 @@ const JumboGuide = artifacts.require('JumboGuide')
 
 contract('JumboGuide', async (accounts) => {
   describe('register()', async()=>{
-    it('should receive name, location, ..., as its input parameter', async=>{})
-    it('should return somethign as its return value', async=>{})
+    it('should receive name, location, category, menu, symbol as its input parameter', async=>{})
+    it('should return type of tree as its return value', async=>{})
   })
   describe('vote()', async()=>{
     it('should affect former voter\'s Jumbo growing state')
   })
-  describe()
+  describe('explore()', async()=>{
+    it('should ')
+  })
   describe()
   describe()
   describe()
