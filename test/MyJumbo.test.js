@@ -17,5 +17,8 @@ contract('MyJumbo', async (accounts) => {
     it('should receive item number', async=>{})
     it('should return validation of action(rmv), jumbo\'s state', async=>{})
   })
-  describe()
+  describe('naming()', async()=>{
+    it('should receive jumbo\'s name', async=>{})
+    it('should return jumbo\'s state, async=>{})
+  })
 })
