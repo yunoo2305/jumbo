@@ -7,14 +7,17 @@ const MyJumbo = artifacts.require('MyJumbo')
 contract('MyJumbo', async (accounts) => {
   describe('feed()', async()=>{
     it('should receive type of food', async=>{})
+    it('should affect Jumbo\'s appearance', async()=>{})
     it('should return level of level of jumbo', async=>{})
   })
   describe('equip()', async()=>{
     it('should receive item number', async=>{})
+    it('should affect Jumbo\'s appearance', async()=>{})
     it('should return validation of ownership, jumbo\'s state', async=>{})
   })
   describe('remove()', async()=>{
     it('should receive item number', async=>{})
+    it('should affect Jumbo\'s appearance', async()=>{})
     it('should return validation of action(rmv), jumbo\'s state', async=>{})
   })
   describe('naming()', async()=>{
