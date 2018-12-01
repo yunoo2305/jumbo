@@ -15,6 +15,9 @@ contract('JumboGuide', async (accounts) => {
   describe('explore()', async()=>{
     it('should ')
   })
+  describe('review()', async()=>{
+    it('should receive', async()=>{})
+  })
   describe()
   describe()
   describe()
