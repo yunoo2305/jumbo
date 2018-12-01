@@ -23,7 +23,7 @@ contract('MyJumbo', async (accounts) => {
   })
   /*
   describe('get()', async()=>{
-    it('should return jumbo\'s state; name, level, list of items', async=>{})
+    it('should return jumbo\'s state; name, level, list of items, type of jumbo(color, country, etc., ...)', async=>{})
   })
   describe('set()', async()=>{
     it('should receive jumbo\'s state', async=>{})
